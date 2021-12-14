@@ -1,0 +1,306 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec 29 15:23:51 2019
+# Process ID: 8304
+# Current directory: C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16008 C:\Users\osman\OneDrive\Desktop\vernam chiper\vhdl\vernam_chiper\vernam_chiper.xpr
+# Log file: C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vivado.log
+# Journal file: C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper\vivado.jou
+#-----------------------------------------------------------
+sstart_guioopen_project {C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.xpr}SScanning sources...FFinished scanning sourcesIINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifiedIINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 879.715 ; gain = 99.938
+update_compile_order -fileset sources_1
+
+eexport_ip_user_files -of_objects  [get_files {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}
+add_files -norecurse {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_top_vlog.prj"
+"xvhdl --incr --relax -prj sim_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BRAM1
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a01001fc1c854f55bfcdb3bfde9fca7e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_top_behav xil_defaultlib.sim_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111110000000011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000101010100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000101010100000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000001010100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000010101000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111111101111001000...]
+Compiling architecture ram64m_v of entity unisim.RAM64M [ram64m_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011010010110100101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111111111111111...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fd_v of entity unisim.FD [fd_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000001000001100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000001000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="110011000011001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01011010001111001111...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011101110111011100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111111111111100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000111100101000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011101110000100000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="110100000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="110000001100110000...]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="100000000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="010000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000100000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101100101011001111...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000000...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111010...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="001100110011001110...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="101000101000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111011111111110000...]
+Compiling architecture ram32m_v of entity unisim.RAM32M [ram32m_default]
+Compiling architecture low_level_definition of entity xil_defaultlib.kcpsm6 [\kcpsm6(interrupt_vector="111111...]
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_ELABORATION...
+Compiling module xil_defaultlib.RAM
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(initp_00="00...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(initp_00="000000000000...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(initp_00="00...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(initp_00="000000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.BRAM0 [bram0_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(initp_00="00...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(initp_00="000000000000...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(initp_00="00...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(initp_00="000000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.BRAM1 [bram1_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_top
+Built simulation snapshot sim_top_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/osman/OneDrive/Desktop/vernam -notrace
+couldn't read file "C:/Users/osman/OneDrive/Desktop/vernam": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 29 15:50:23 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 903.121 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_top_behav -key {Behavioral:sim_1:Functional:sim_top} -tclbatch {sim_top.tcl} -view {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/sim_top_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/sim_top_behav.wcfg}
+source sim_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module sim_top.uut.dual_port_ram.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 931.160 ; gain = 33.758
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 85 us
+Block Memory Generator module sim_top.uut.dual_port_ram.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run 85 us
+run 85 us
+run 85 us
+run 85 us
+run 85 us
+export_ip_user_files -of_objects  [get_files {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}
+add_files -norecurse {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_top_vlog.prj"
+"xvhdl --incr --relax -prj sim_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BRAM1
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a01001fc1c854f55bfcdb3bfde9fca7e --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_top_behav xil_defaultlib.sim_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.std_logic_textio
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111110000000011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000101010100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000101010100000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000001010100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000010101000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10111111101111001000...]
+Compiling architecture ram64m_v of entity unisim.RAM64M [ram64m_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011010010110100101...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111111111111111...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fd_v of entity unisim.FD [fd_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000001000001100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000001000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="110011000011001111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01011010001111001111...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011101110111011100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111111111111100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000111100101000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011101110000100000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="110100000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000100...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="110000001100110000...]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="100000000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="010000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000100000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101100101011001111...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000000...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111010...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="001100110011001110...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="101000101000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111011111111110000...]
+Compiling architecture ram32m_v of entity unisim.RAM32M [ram32m_default]
+Compiling architecture low_level_definition of entity xil_defaultlib.kcpsm6 [\kcpsm6(interrupt_vector="111111...]
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_ELABORATION...
+Compiling module xil_defaultlib.RAM
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(initp_00="00...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(initp_00="000000000000...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(initp_00="00...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(initp_00="000000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.BRAM0 [bram0_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(initp_00="00...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(initp_00="000000000000...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(initp_00="00...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(initp_00="000000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.BRAM1 [bram1_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim_top
+Built simulation snapshot sim_top_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 931.500 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_top_behav -key {Behavioral:sim_1:Functional:sim_top} -tclbatch {sim_top.tcl} -view {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/sim_top_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/sim_top_behav.wcfg}
+source sim_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module sim_top.uut.dual_port_ram.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 933.375 ; gain = 1.875
+run 85 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 16:44:18 2019...

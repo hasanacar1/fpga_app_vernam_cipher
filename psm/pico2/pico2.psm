@@ -1,0 +1,73 @@
+#ifDef proc::xPblze6
+			#set proc::xPblze6::scrpdSize, 64;
+			#set proc::xPblze6::clkFreq, 100000000;
+		
+			#set IOdev::BRAM0::en, TRUE;
+			#set IOdev::BRAM0::type, mem;
+			#set IOdev::BRAM0::size, 4096;
+			
+			#set instmem::pageSize, 4096;
+			#set instmem::pageCount, 1;
+			#set instmem::sharedMemLocation, loMem;
+			
+			#set IOdev:BRAM0::value, instMem;
+			
+			#set IOdev:BRAM0::vhdlEn, TRUE;
+			#set IOdev:BRAM0::vhdlEntityName, "BRAM0" ;
+			#set IOdev:BRAM0::vhdlTmplFile, "ROM_form.vhd" ;
+			#set IOdev:BRAM0::vhdlTargetFile, "BRAM0.vhd" ;
+		#endif
+
+LOAD sA, 01
+LOAD sB, 01
+LOAD s0, 18
+
+ANA_DONGU: 
+	LOAD s6, 00
+	LOAD sB, sA
+    WRPRT s0, (sB)
+    ADD sA, 01
+	DONGU:
+		ADD s6, 01 
+		LOAD s1, s0
+		AND s1, 128
+		LOAD s5, 0
+		SHIFTER1:
+			ADD s5, 01
+			sR0 s1
+			COMP s5, 07
+			JUMP NZ, SHIFTER1
+		LOAD s2, s0
+		AND s2, 32
+		LOAD s5, 0
+		SHIFTER2:
+			ADD s5, 01
+			sR0 s2
+			COMP s5, 05
+			JUMP NZ, SHIFTER2
+		LOAD s3, s0
+		AND s3, 16
+		LOAD s5, 0
+		SHIFTER3:
+			ADD s5, 01
+			sR0 s3
+			COMP s5, 04
+		JUMP NZ, SHIFTER3
+		LOAD s4, s0
+		AND s4, 8
+		LOAD s5, 0
+		SHIFTER4:
+			ADD s5, 01
+			sR0 s4
+			COMP s5, 03
+			JUMP NZ, SHIFTER4
+		XOR s1, s2
+		XOR s1, s3
+		XOR s1, s4
+		sL0 s0 
+		ADD s0, s1
+		COMP s6, 08
+		JUMP NZ, DONGU		
+	COMP sA, 6
+	JUMP NZ, ANA_DONGU
+	

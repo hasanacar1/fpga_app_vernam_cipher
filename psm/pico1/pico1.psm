@@ -1,0 +1,46 @@
+#ifDef proc::xPblze6
+			#set proc::xPblze6::scrpdSize, 64;
+			#set proc::xPblze6::clkFreq, 100000000;
+		
+			#set IOdev::BRAM0::en, TRUE;
+			#set IOdev::BRAM0::type, mem;
+			#set IOdev::BRAM0::size, 4096;
+			
+			#set instmem::pageSize, 4096;
+			#set instmem::pageCount, 1;
+			#set instmem::sharedMemLocation, loMem;
+			
+			#set IOdev:BRAM0::value, instMem;
+			
+			#set IOdev:BRAM0::vhdlEn, TRUE;
+			#set IOdev:BRAM0::vhdlEntityName, "BRAM1" ;
+			#set IOdev:BRAM0::vhdlTmplFile, "ROM_form.vhd" ;
+			#set IOdev:BRAM0::vhdlTargetFile, "BRAM1.vhd" ;
+		#endif
+LOAD s0, 65
+LOAD sA, 01
+LOAD s2, 00
+LOAD s3, 05
+LOAD s7, 00
+DELAY:
+	LOAD s6, 00
+	DELAY1:
+		ADD s6, 01
+		COMP s6, 8
+		JUMP NZ, DELAY1
+	ADD s7, 01
+	COMP s7, 150
+	JUMP NZ, DELAY				
+READ:
+	ADD s2, 01
+    ADD s3, 01
+	LOAD s1, s3
+	LOAD sA, s2	
+	RDPRT sB, (sA)
+	XOR sB, s0 
+	WRPRT sB, (s1)
+	ADD s0, 01
+	COMP s2, 05
+	JUMP NZ, READ
+
+	

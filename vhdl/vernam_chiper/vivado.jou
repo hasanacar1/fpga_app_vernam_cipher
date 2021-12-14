@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec 29 15:23:51 2019
+# Process ID: 8304
+# Current directory: C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16008 C:\Users\osman\OneDrive\Desktop\vernam chiper\vhdl\vernam_chiper\vernam_chiper.xpr
+# Log file: C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vivado.log
+# Journal file: C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper\vivado.jou
+#-----------------------------------------------------------
+sstart_guioopen_project {C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/vernam_chiper.xpr}update_compile_order -fileset sources_1
+
+export_ip_user_files -of_objects  [get_files {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}
+add_files -norecurse {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/sim_top_behav.wcfg}
+source sim_top.tcl
+restart
+run 85 us
+run 85 us
+run 85 us
+run 85 us
+run 85 us
+run 85 us
+export_ip_user_files -of_objects  [get_files {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}
+add_files -norecurse {{C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/BRAM1.vhd}}
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config {C:/Users/osman/OneDrive/Desktop/vernam chiper/vhdl/vernam_chiper/sim_top_behav.wcfg}
+source sim_top.tcl
+run 85 us
+close_sim
